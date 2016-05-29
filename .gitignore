@@ -6,3 +6,4 @@ src/server/ssl/*.csrt
 src/server/ssl/*.key
 src/server/ssl/*.p12
 src/server/ssl/*.srl
+src/server/ssl/*.csr
