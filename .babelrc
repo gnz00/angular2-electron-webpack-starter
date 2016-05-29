@@ -1,0 +1,11 @@
+{
+  "presets": ["es2015", "stage-0"],
+  "plugins": ["add-module-exports"],
+  "env": {
+    "test": {
+      "plugins": [
+        ["webpack-loaders", { "config": "config/webpack.config.test.js", "verbose": false }]
+      ]
+    }
+  }
+}

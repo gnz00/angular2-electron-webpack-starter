@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+require('babel-register');
+var open = require('open');
+var startServer = require('../src/server/server').start;
+
+startServer()
+  .then((server) => {
+    open(`${server.protocol}://${server.address}:${server.port}`);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
